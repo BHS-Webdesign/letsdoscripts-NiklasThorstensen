@@ -1,0 +1,246 @@
+body{
+  background-image:url(public/img/dKAWxY.png);
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style:normal;
+}
+
+#innerHTMLFUN{
+  color:white;
+}
+
+#head{
+  color:white;
+}
+
+#target{
+  color:white;
+}
+      
+.frame {
+  display:inline-block;
+  height:17rem;
+  width:21.8rem;
+  background-color:lightblue;
+  overflow:hidden;
+  position:relative;
+  border:1rem solid white;
+  box-shadow:inset .25rem 1rem 2rem rgba(0, 0, 0, 0);
+  margin:1rem; 
+}
+
+.frame.f1{
+  background:url(public/img/background.png) no-repeat;
+  background-size:175%;
+  background-position:-50px -20px;
+  z-index:-1;
+}
+
+.frame.f2{
+  background:url(public/img/background.png) no-repeat;
+  background-size:210%;
+  background-position:-175px -75px;
+}
+
+.frame.f4{
+  left:17%;
+  background:url(public/img/nether.png) no-repeat;
+  background-size:130%;
+  background-position-x:50%;
+}
+
+.frame.f5{
+  right:-17%;
+  background-color:black;
+}
+
+.talk{
+  color:black;
+  position:absolute;
+  background:url(public/img/speak.png) no-repeat;
+  background-size:50% 30%;
+  width:8em;
+  height:8em;
+  padding:2em;
+}
+
+#placers{
+  display:none;
+}
+
+.chr{
+  position:absolute;
+  bottom:0;
+  display:block;
+  padding:1rem;
+  border:1px solid brown;
+  background-color:rgba(255, 150, 200, .25);
+}
+
+.frame.f1 .chr.mainchar{
+  bottom:2%;
+  height:80%;
+  width:40%;
+  background:url(public/img/mainchar.png) no-repeat;
+  background-size:100%;
+}
+
+.chr.rival{
+  right:10%;
+  background-color:purple;
+  margin:0 0 0 61%;
+  bottom:10%;
+}
+
+.chr.rival .talk{
+  right:-200%;
+  bottom:50%;
+}
+
+.chr.flintandsteel{
+  left:50%;
+  background: url(public/img/R.png) no-repeat;
+  background-position: -2.5px -1px;
+  background-size:55px;
+  height:20px;
+  width:20px;
+  margin:0 0 0 -30px;
+  border:0;
+
+  animation-name:floatingitem;
+  animation-duration:2s;
+  animation-iteration-count:infinite;
+  animation-direction:alternate;
+}
+.chr.flintandsteel .talk{
+  color:transparent;
+  background:none;
+}
+.chr.deadguy{
+  background-color:rgba(255, 0, 0, .10);
+  left:50%;
+  bottom:35%;
+  z-index:-1;
+}
+
+.chr.deadguy .talk{
+  color:transparent;
+  background:none;
+}
+
+.frame.f2 .chr.mainchar{
+  left:22%;
+  bottom:10%;
+  height:5rem;
+  width:5rem;
+}
+
+.frame.f2 .chr.mainchar .talk{
+  left:90%;
+  bottom:30%;
+  background-size:75% 30%;
+  background-position:25% 11%;
+  z-index:1;
+}
+
+.chr.AnEnderPearl{
+  background:url(public/img/Ender_Pearl_JE3_BE2.png) no-repeat;
+  background-size:55px;
+  height:20px;
+  width:20px;
+  border:0;
+}
+
+.chr.AnEnderPearl .talk{
+  color:transparent;
+  background:none;
+}
+
+.frame.f2 .chr.AnEnderPearl{
+  right:20%;
+  bottom:30%;
+  margin:0 0 0 61%;
+}
+
+.frame.f3 .chr.AnEnderPearl{
+  bottom:60%;
+  animation-name:fall;
+  animation-duration:2s;
+  animation-iteration-count:infinite;
+}
+
+.frame.f3 .chr.mainchar{
+  left:22%;
+  bottom:10%;
+  width:8rem;
+  height:12rem;
+  border: 1px transparent;
+  background:url(public/img/portalrun.png) no-repeat;
+  background-size:100%;
+  animation-name:portalrun;
+  animation-duration:2s;
+  animation-iteration-count:infinite;
+}
+
+.frame.f3 .chr.mainchar .talk{
+  color:transparent;
+  background:none;
+}
+
+.frame.f4{
+  color:white;
+}
+
+.chr.nether{
+  left:15%;
+  height:13rem;
+  width:13rem;
+  bottom:-10px;
+  margin:0 0 0 3px;
+  background:url(public/img/giveup.png) no-repeat;
+  border:0;
+  background-size:140%;
+  background-position-x:55%;
+}
+.chr.nether .talk{
+  bottom:45%;
+  right:-60px;
+  background-size:95% 64px;
+  background-position:0 20px;
+}
+
+.chr.theEnd{
+  left:50%;
+  bottom:50%;
+  background-color:black;
+  margin:0 0 -10px -10px;
+  border:0;
+}
+
+.chr.theEnd .talk{
+  color:white;
+  font-size:2rem;
+  left:-1.35em;
+  bottom:-0.05em;
+  height:1.15em;
+  background:none;
+}
+
+@keyframes floatingitem{
+  0%{bottom:13%;}
+  100%{bottom:10%;}
+}
+
+@keyframes fall{
+  0%{left:-10%; bottom:75%; background-image:url(public/img/Ender_Pearl_JE3_BE2.png) no-repeat;}
+  50%{left:15%; bottom:0%;}
+  95%{background-image:none;}
+  100%{left:15%; bottom:0%; background-image:none;}
+}
+
+@keyframes portalrun{
+  0%{left:5%; bottom:0;background:none;}
+  0.5%{background:url(public/img/portalrun.png) no-repeat;}
+  20%{left:5%; bottom:0;}
+  100%{left:80%; bottom:10%;}
+}
