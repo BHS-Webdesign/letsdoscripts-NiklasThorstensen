@@ -198,7 +198,7 @@ body{
     z-index:-1;
     animation-name:dead;
     animation-duration:3s;
-    animation-iteration-count: ;
+    animation-iteration-count:infinite;
 }
 .frame.f2 .chr.rival .talk{
   color:transparent;
@@ -268,9 +268,9 @@ body{
   100%{bottom:10%;}
 }
 @keyframes dead{
-  0%{transform:rotate(0deg)}
-  25%{transform:rotate(90deg)}
-  100%{transform:rotate(90deg)}
+  0%{transform:rotate(0deg); right: 2.5%; bottom: -2%;}
+  25%{transform:rotate(90deg); right:-45%; bottom: -40%;}
+  100%{transform:rotate(90deg); right:-45%; bottom: -40%;}
 }
 @keyframes throw{
   0%{transform:rotate(50deg); left:22%; bottom:-20%}

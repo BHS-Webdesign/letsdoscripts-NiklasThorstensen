@@ -17,7 +17,7 @@ var LIST = [
         ]
     },
     {
-        title:"And whoever this guy is won, but he also picked up...",
+        title:"And this green dude won, but he also picked up...",
         class:"f2",
         chrs:[
             "mainchar",
