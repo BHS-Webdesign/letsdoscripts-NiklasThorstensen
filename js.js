@@ -94,7 +94,7 @@ dance("#placers .frame", LIST);
 var inHtml = function(x){
     document.querySelector("div#innerHTMLFUN").innerHTML = x;
 }
-inHtml("A really short story of some green dude under some brainrot while playing Minecraft, that's all there is");
+inHtml("A really short story of some green dude under some brainrot while playing Minecraft, that's all there is to even explain here");
 
 var draw = function(x){
     var target = document.getElementById(target);
