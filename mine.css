@@ -40,10 +40,18 @@ body{
   background:url(public/img/background.png) no-repeat;
   background-size:210%;
   background-position:-175px -75px;
+  z-index:-1;
+}
+
+.frame.f3{
+  background:url(public/img/portal.png) no-repeat;
+  background-size:125%;
+  background-position:-30px -20px;
 }
 
 .frame.f4{
   left:17%;
+  color:white;
   background:url(public/img/nether.png) no-repeat;
   background-size:130%;
   background-position-x:50%;
@@ -73,11 +81,11 @@ body{
   bottom:0;
   display:block;
   padding:1rem;
-  border:1px solid brown;
   background-color:rgba(255, 150, 200, .25);
 }
 
 .frame.f1 .chr.mainchar{
+  left:-5%;
   bottom:2%;
   height:80%;
   width:40%;
@@ -85,16 +93,29 @@ body{
   background-size:100%;
 }
 
+.frame.f1 .chr.mainchar .talk{
+  left:67%;
+  bottom:28%;
+  background-size:80% 30%;
+  background-position:20% 10%;
+}
+
 .chr.rival{
-  right:10%;
-  background-color:purple;
-  margin:0 0 0 61%;
-  bottom:10%;
+  height:80%;
+  width:40%;
+  right:2.5%;
+  background:url(public/img/rival.png) no-repeat;
+  background-size:110%;
+  background-position-x:25%;
+  bottom:-2%;
 }
 
 .chr.rival .talk{
-  right:-200%;
-  bottom:50%;
+  right:5%;
+  bottom:12%;
+  background:url(public/img/speakflipoed.png) no-repeat;
+  background-size:55% 20%;
+  background-position:25% 15%;
 }
 
 .chr.flintandsteel{
@@ -104,9 +125,7 @@ body{
   background-size:55px;
   height:20px;
   width:20px;
-  margin:0 0 0 -30px;
-  border:0;
-
+  margin:0 0 0 -20px;
   animation-name:floatingitem;
   animation-duration:2s;
   animation-iteration-count:infinite;
@@ -117,49 +136,73 @@ body{
   background:none;
 }
 .chr.deadguy{
-  background-color:rgba(255, 0, 0, .10);
-  left:50%;
-  bottom:35%;
+  background-color:transparent;
+  background-image:url(public/img/deadguy.png);
+  background-position:45% 50%;
+  background-size:110%;
+  height:20%;
+  width:45%;
+  left:30%;
+  bottom:5%;
+  margin:0 0 0 -5%;
   z-index:-1;
 }
-
 .chr.deadguy .talk{
   color:transparent;
   background:none;
 }
 
 .frame.f2 .chr.mainchar{
-  left:22%;
-  bottom:10%;
-  height:5rem;
-  width:5rem;
+  height:16rem;
+  width:11rem;
+  background:url(public/img/pearlthrow.png) no-repeat;
+  background-size:100%;
+  background-position:-10px -30px;
+  animation-name:throw;
+  animation-duration:3s;
+  animation-iteration-count:infinite;
 }
-
 .frame.f2 .chr.mainchar .talk{
   left:90%;
   bottom:30%;
   background-size:75% 30%;
   background-position:25% 11%;
   z-index:1;
+  animation-name:speech;
+  animation-duration:3s;
+  animation-iteration-count:infinite;
 }
-
 .chr.AnEnderPearl{
   background:url(public/img/Ender_Pearl_JE3_BE2.png) no-repeat;
   background-size:55px;
   height:20px;
   width:20px;
-  border:0;
 }
-
 .chr.AnEnderPearl .talk{
   color:transparent;
   background:none;
 }
-
 .frame.f2 .chr.AnEnderPearl{
   right:20%;
   bottom:30%;
   margin:0 0 0 61%;
+  animation-name:pearl;
+  animation-duration:3s;
+  animation-iteration-count:infinite;
+}
+.frame.f2 .chr.rival{
+    background:url(public/img/deadrival.png) no-repeat;
+    background-size:120%;
+    height:90%;
+    width:50%;
+    z-index:-1;
+    animation-name:dead;
+    animation-duration:3s;
+    animation-iteration-count: ;
+}
+.frame.f2 .chr.rival .talk{
+  color:transparent;
+  background:none;
 }
 
 .frame.f3 .chr.AnEnderPearl{
@@ -167,28 +210,24 @@ body{
   animation-name:fall;
   animation-duration:2s;
   animation-iteration-count:infinite;
+  background-size:45px;
+  height:10px;
+  width:10px;
 }
-
 .frame.f3 .chr.mainchar{
   left:22%;
   bottom:10%;
   width:8rem;
   height:12rem;
-  border: 1px transparent;
   background:url(public/img/portalrun.png) no-repeat;
   background-size:100%;
   animation-name:portalrun;
   animation-duration:2s;
   animation-iteration-count:infinite;
 }
-
 .frame.f3 .chr.mainchar .talk{
   color:transparent;
   background:none;
-}
-
-.frame.f4{
-  color:white;
 }
 
 .chr.nether{
@@ -198,15 +237,15 @@ body{
   bottom:-10px;
   margin:0 0 0 3px;
   background:url(public/img/giveup.png) no-repeat;
-  border:0;
   background-size:140%;
   background-position-x:55%;
 }
 .chr.nether .talk{
-  bottom:45%;
-  right:-60px;
-  background-size:95% 64px;
-  background-position:0 20px;
+  bottom:50%;
+  right:-90px;
+  width:10em;
+  background-size:90% 75px;
+  background-position:-5px 25px;
 }
 
 .chr.theEnd{
@@ -214,14 +253,12 @@ body{
   bottom:50%;
   background-color:black;
   margin:0 0 -10px -10px;
-  border:0;
 }
-
 .chr.theEnd .talk{
   color:white;
   font-size:2rem;
-  left:-1.35em;
-  bottom:-0.05em;
+  left:-3.25em;
+  bottom:-2em;
   height:1.15em;
   background:none;
 }
@@ -230,17 +267,43 @@ body{
   0%{bottom:13%;}
   100%{bottom:10%;}
 }
+@keyframes dead{
+  0%{transform:rotate(0deg)}
+  25%{transform:rotate(90deg)}
+  100%{transform:rotate(90deg)}
+}
+@keyframes throw{
+  0%{transform:rotate(50deg); left:22%; bottom:-20%}
+  25%{transform:rotate(0deg); left:10%; bottom:-10%;}
+  85%{transform:rotate(-10deg); left:0; bottom:-10%;}
+  95%{transform:rotate(50deg); left:22%; bottom:-15%;}
+  100%{transform:rotate(50deg); left:22%; bottom:-15%;}
+}
+@keyframes speech{
+  0%{transform:rotate(-50deg); left:30%; bottom:80%;}
+  25%{transform:rotate(0deg); left:70%; bottom:35%;}
+  85%{transform:rotate(10deg); left:70%; bottom:27%;}
+  95%{transform:rotate(-50deg); left:30%; bottom:75%;}
+  100%{transform:rotate(-50deg); left:30%; bottom:75%;}
+}
+@keyframes pearl{
+  0%{left:15%; bottom:-20%}
+  25%{left:-50%; bottom:80%;}
+  85%{left:-70%; bottom:85%;}
+  95%{left:22%; bottom:100%;}
+  100%{left:22%; bottom:100%;}
+}
 
 @keyframes fall{
-  0%{left:-10%; bottom:75%; background-image:url(public/img/Ender_Pearl_JE3_BE2.png) no-repeat;}
-  50%{left:15%; bottom:0%;}
+  0%{left:-10%; bottom:80%; background-image:url(public/img/Ender_Pearl_JE3_BE2.png) no-repeat;}
+  50%{left:20%; bottom:0%;}
   95%{background-image:none;}
-  100%{left:15%; bottom:0%; background-image:none;}
+  100%{left:20%; bottom:0%; background-image:none;}
 }
 
 @keyframes portalrun{
   0%{left:5%; bottom:0;background:none;}
   0.5%{background:url(public/img/portalrun.png) no-repeat;}
   20%{left:5%; bottom:0;}
-  100%{left:80%; bottom:10%;}
+  100%{left:55%; bottom:10%;}
 }

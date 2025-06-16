@@ -11,8 +11,8 @@ var LIST = [
         ],
         words:[
             "Flint and Steel!",
-            "No its mine!!!!!!!!",
-            "I'm flint and steeling right now",
+            "No shut up",
+            "Flint and Steel!",
             "i am ded"
         ]
     },
@@ -21,11 +21,13 @@ var LIST = [
         class:"f2",
         chrs:[
             "mainchar",
-            "AnEnderPearl"
+            "AnEnderPearl",
+            "rival"
         ],
         words:[
             "An Ender Pearl.",
-            "???????"
+            "???????",
+            "AAAAAAAAAA"
         ]
     },
     {
@@ -47,7 +49,7 @@ var LIST = [
             "nether"
         ],
         words:[
-            "Nope, nevermind, im not doing this"
+            "Nevermind, forgot the brainrot's already old"
         ]
     },
     {
@@ -92,7 +94,7 @@ dance("#placers .frame", LIST);
 var inHtml = function(x){
     document.querySelector("div#innerHTMLFUN").innerHTML = x;
 }
-inHtml("I have no idea what i am even doing here anymore or what to type here so 1234567890qwertyuiopasdfghjklzxcvbnm!@#$%^&*()QWERTYUIOPASDFGHKLZXCVBNM123l");
+inHtml("I have no idea what i am even doing here anymore or what to type here so 1234567890qwertyuiopasdfghjklzxcvbnmI..amSteveQWERTYUIOPASDFGHKLZXCVBNM123");
 
 var draw = function(x){
     var target = document.getElementById(target);
