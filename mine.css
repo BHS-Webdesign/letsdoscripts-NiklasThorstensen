@@ -47,6 +47,7 @@ body{
   background:url(public/img/portal.png) no-repeat;
   background-size:125%;
   background-position:-30px -20px;
+  color:darkblue;
 }
 
 .frame.f4{
