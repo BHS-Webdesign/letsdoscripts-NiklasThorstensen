@@ -94,7 +94,7 @@ dance("#placers .frame", LIST);
 var inHtml = function(x){
     document.querySelector("div#innerHTMLFUN").innerHTML = x;
 }
-inHtml("I have no idea what i am even doing here anymore or what to type here so 1234567890qwertyuiopasdfghjklzxcvbnmI..amSteveQWERTYUIOPASDFGHKLZXCVBNM123");
+inHtml("ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZAB");
 
 var draw = function(x){
     var target = document.getElementById(target);
