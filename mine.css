@@ -286,11 +286,9 @@ body{
 }
 
 @keyframes dead{
-  0%{transform:rotate(0deg); right: 2.5%; bottom: -2.5%; height:100%;
-    width:50%;}
+  0%{transform:rotate(0deg); right: 2.5%; bottom: -2.5%; height:100%; width:50%;}
   25%{transform:rotate(90deg); right:-45%; bottom: -50%;}
-  85%{background:url(public/img/deadrival.png) no-repeat; right:-45%; bottom: -50%; height:100%;
-    width:50%;}
+  85%{background:url(public/img/deadrival.png) no-repeat; right:-45%; bottom: -50%; height:100%; width:50%;}
   86%{background:none;}
   100%{background:none;}
 }
