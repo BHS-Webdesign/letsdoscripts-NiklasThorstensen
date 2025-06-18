@@ -22,7 +22,8 @@ var LIST = [
         chrs:[
             "mainchar",
             "AnEnderPearl",
-            "rival"
+            "rival",
+            "deathparticles"
         ],
         words:[
             "An Ender Pearl.",
@@ -94,7 +95,7 @@ dance("#placers .frame", LIST);
 var inHtml = function(x){
     document.querySelector("div#innerHTMLFUN").innerHTML = x;
 }
-inHtml("With bro's power of comedy...");
+inHtml("With this green dude's power of comedy that is usually never explained, this is...");
 
 var draw = function(x){
     var target = document.getElementById(target);

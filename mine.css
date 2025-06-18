@@ -192,16 +192,32 @@ body{
   animation-iteration-count:infinite;
 }
 .frame.f2 .chr.rival{
-    background:url(public/img/deadrival.png) no-repeat;
-    background-size:110%;
-    height:100%;
-    width:50%;
-    z-index:-1;
-    animation-name:dead;
-    animation-duration:3s;
-    animation-iteration-count:infinite;
+  background:url(public/img/deadrival.png) no-repeat;
+  background-size:110%;
+  height:100%;
+  width:50%;
+  z-index:-1;
+  animation-name:dead;
+  animation-duration:3s;
+  animation-iteration-count:infinite;
 }
 .frame.f2 .chr.rival .talk{
+  color:transparent;
+  background:none;
+}
+.chr.deathparticles{
+  background:url(public/img/deathparticles.png) no-repeat;
+  height:100%;
+  width:50%;
+  background-size:110%;
+  right:-20%;
+  bottom:-20%;
+  z-index:-1;
+  animation-name:particles;
+  animation-duration:3s;
+  animation-iteration-count:infinite;
+}
+.chr.deathparticles .talk{
   color:transparent;
   background:none;
 }
@@ -270,9 +286,19 @@ body{
 }
 
 @keyframes dead{
-  0%{transform:rotate(0deg); right: 2.5%; bottom: -2.5%;}
+  0%{transform:rotate(0deg); right: 2.5%; bottom: -2.5%; height:100%;
+    width:50%;}
   25%{transform:rotate(90deg); right:-45%; bottom: -50%;}
-  100%{transform:rotate(90deg); right:-45%; bottom: -50%;}
+  85%{background:url(public/img/deadrival.png) no-repeat; right:-45%; bottom: -50%; height:100%;
+    width:50%;}
+  86%{background:none;}
+  100%{background:none;}
+}
+@keyframes particles{
+  0%{background:none;}
+  25%{background:none;}
+  25.5%{background:url(public/img/deathparticles.png) no-repeat; right:-20%; bottom:-20%; background-size:110%;}
+  100%{transform:rotate(0deg); right:-20%; bottom: 0%; background:url(public/img/deathparticles.png) no-repeat; background-size:110%;}
 }
 @keyframes throw{
   0%{transform:rotate(50deg); left:22%; bottom:-20%}
